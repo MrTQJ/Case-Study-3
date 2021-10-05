@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="“utf-8”" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="image/java_house_image.png" />
+      </header>
+
+      <div id="leftcolumn">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="music.html">Music</a>
+          <a href="jobs.html">Jobs</a>
+        </nav>
+      </div>
+
+      <div id="rightcolumn">
+        <h2>Jobs at JavaJam</h2>
+
+        <p style="margin-left: -10px" ;>
+          Want to work at JavaJam? Fill out the form below to start our
+          application. Required fields are marked with an asterisk *
+        </p>
+
+        <form action="show_post.php" method="post" id="loginForm">
+          <div class="form-input">
+            <label for="myName">*Name:</label>
+            <input
+              type="text"
+              name="myName"
+              class="jobs"
+              id="myName"
+              placeholder="Enter your name here"
+              required
+              onchange="validateName()"
+            />
+            <span id="hiddenNameInput" style="color:red"></span>
+            <br />
+          </div>
+
+          <div class="form-input">
+            <label for="email">*E-mail:</label>
+            <input
+              name="email"
+              class="jobs"
+              id="email"
+              placeholder="Enter your Email-ID here"
+              required
+              onchange="validateUser()"
+            />
+            <span id="hiddenEmailInput" style="color:red"></span>
+            <br />
+          </div>
+
+          <!-- 		  	<div>
+		  	<label for="mystartdate">Start Date:</label>
+		  	<input type="text" data-format="MM/dd/yyyy"><br>
+		  	</div>
+ -->
+          <div class="form-input">
+            <label for="mystartdate">Start Date:</label>
+            <input
+              type="date"
+              name="mystartdate"
+              class="jobs"
+              id="mystartdate"
+            /><br />
+          </div>
+
+          <div class="form-input">
+            <label
+              style="vertical-align: top; margin-top: 0px"
+              for="myexperience"
+              >*Experience:</label
+            >
+            <textarea
+              name="myexperience"
+              id="myexperience"
+              rows="4"
+              cols="29"
+              placeholder="Enter your past experience here"
+              required
+            ></textarea>
+          </div>
+          <!-- 
+          <div>
+            <input type="reset" id="" name="clear" value="Clear" />
+          </div> -->
+
+          <br />
+
+          <div>
+            <input type="submit" id="" name="submit" value="Apply Now" />
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div id="footer">
+          <small
+            ><i>Copyright &copy; 2014 JavaJam Coffee House </i>
+            <br />
+            <i><a href="mailto:QiJian@Tan.com">QiJian@Tan.com</a></i>
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="job.js"></script>
+</html>
