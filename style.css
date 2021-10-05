@@ -1,0 +1,162 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  /*      background-color: #ecdeaa;*/
+  background: repeating-linear-gradient(
+    -45deg,
+    #fcfccc,
+    #fcfccc 2px,
+    #cba96a 2px,
+    #cba96a 4px
+  );
+}
+
+#wrapper {
+  background-color: #e2d1b2;
+  width: 100%;
+  margin: auto;
+  min-width: 800px;
+  max-width: 1000px;
+  box-shadow: 5px 10px 8px #000000;
+}
+
+header {
+  text-align: center;
+  background-color: #d1b38e;
+  /*        margin: 0px; 
+        padding: 0px 0px 10px 0px;*/
+}
+
+#leftcolumn {
+  float: left;
+  width: 150px;
+}
+
+#rightcolumn {
+  margin-left: 150px;
+  background-color: #f5f5dd;
+  padding: 10px 10px 40px 40px;
+  margin-bottom: -30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #916359;
+}
+
+
+#footer {
+  background-color: #d1b38e;
+  font-size: 70%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#image-content {
+  float: left;
+  padding: 0px 10px 10px 35px;
+}
+
+#content {
+  padding-left: 400px;
+}
+
+nav {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+a {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+}
+
+li {
+  list-style-image: url(coffeeicon_resized.jpg);
+  padding-bottom: 5px;
+} /*https://www.icon0.com/coffee-icon-sign-design-free-png-images-3/*/
+
+p {
+  padding-left: 15px;
+}
+
+a:visited {
+  color: #c09977;
+}
+
+a:hover {
+  color: #f5f5dc;
+}
+
+table {
+  padding-left: 70px;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #d1b38e;
+}
+
+th {
+  padding: 10px;
+}
+
+.table-content {
+  margin: auto;
+  width: 562px;
+}
+
+.dates {
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 0px;
+}
+
+td {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border-style: none;
+}
+
+form {
+  font-family: Arial, sans-serif;
+  /* width: 350px;   */
+  padding: 10px;
+}
+
+label {
+  float: left;
+  clear: left;
+  display: block;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.costLabel {
+  float: none;
+  display: inline;
+}
+
+textarea {
+  margin-top: 10px;
+  display: block;
+}
+
+.jobs {
+  margin-top: 10px;
+}
+
+.amount {
+  margin-top: 10px;
+  width: 40px;
+}
+
+.form-input {
+  padding-bottom: 20px;
+}
+
+#mySubmit {
+  margin-left: 110px;
+}
