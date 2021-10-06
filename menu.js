@@ -39,3 +39,49 @@ function computeTotal() {
   document.getElementById("total").innerHTML = total;
 }
 
+function editJava() {
+  console.log("CLICKED");
+  console.log(document.getElementById("javaRadio").checked);
+  if (document.getElementById("javaRadio").checked) {
+    document.getElementById(
+      "javaForm"
+    ).innerHTML = `
+    <label>New Price: </label>
+    <input type="number" size="3" maxlength="4" min="0" name="updatedJavaPrice">
+    <input type="submit">`;
+  } else {
+    document.getElementById("javaForm").innerHTML = "";
+  }
+}
+
+function editCafe() {
+  console.log("CLICKED");
+  console.log(document.getElementById("cafeRadio").checked);
+  if (document.getElementById("cafeRadio").checked) {
+    document.getElementById("cafeForm").innerHTML =
+      `
+      <div>
+      <label>New Price(Single): </label>
+      </div>
+      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeSinglePrice">
+      <div>
+      <label>New Price(Double): </label>
+      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeDoublePrice">
+      </div>`;
+  } else {
+    document.getElementById("cafeForm").innerHTML = "";
+  }
+}
+function editIced() {
+  console.log("CLICKED");
+  console.log(document.getElementById("icedRadio").checked);
+  if (document.getElementById("icedRadio").checked) {
+    document.getElementById("icedForm").innerHTML =
+      '<label>New Price(Single): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedSinglePrice"><label>New Price(Double): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedDoublePrice">';
+  } else {
+    document.getElementById("icedForm").innerHTML = "";
+  }
+}
+
+console.log("LOADED");
+

@@ -15,6 +15,7 @@ function isAlphaOrSpace(string) {
 function isAlphaOrDot(string) {
   return /^[a-zA-Z0-9.]+$/.test(string);
 }
+
 function validateName() {
   let nameInput = document.getElementById("myName").value;
   if (isAlphaOrSpace(nameInput)) {
@@ -39,7 +40,7 @@ function isDomain(string) {
     if (
       addressExtensionsLength >= 2 &&
       addressExtensionsLength <= 4 &&
-      addressExtensions[0].length !== 0
+      (!addressExtensions.includes(''))
     ) {
       if (
         addressExtensions[addressExtensionsLength - 1].length >= 2 &&
