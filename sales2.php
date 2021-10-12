@@ -15,7 +15,7 @@ for ($i=0; $i <$num_results; $i++) {
     $row['revenue'] = $row['quantity'] * $row['price'];
 	array_push($arr, $row);
  }
-
+// print_r($arr);
  ?>
 
 <!DOCTYPE html>

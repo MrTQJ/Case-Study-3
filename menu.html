@@ -40,7 +40,7 @@
 				<td>Regular house blend, decaffeinated coffee, or flavour of the day.<br>
 				<b>Endless Cup $2.00</b>
 				</td>
-				<td align="center"><input type="number" class="amount" id="javaQty" size="3" maxlength="4" min="0" onchange="computeJava();"></td>
+				<td align="center"><input type="number" oninput="this.value = Math.abs(this.value)" class="amount" id="javaQty" size="3" maxlength="4" min="0" onchange="computeJava();"></td>
 				<td align="center">$<label class="costLabel" id="javaCost">0</label></td>
 			</tr>
 			<tr>
@@ -52,7 +52,7 @@
 				<b> <input type = "radio"  name="cafeRadio" id="doubleCafeRadio"  onchange="computeCafe()"   
 					/>Double $3.00</b>
 				</td>
-				<td align="center"><input type="number" class="amount" id="cafeQty" size="3" maxlength="4" min="0" onchange="computeCafe()"></td>
+				<td align="center"><input type="number" oninput="this.value = Math.abs(this.value)" class="amount" id="cafeQty" size="3" maxlength="4" min="0" onchange="computeCafe()"></td>
 				<td align="center">$<label class="costLabel" id="cafeCost">0</label></td>
 			</tr>
 			<tr>
@@ -64,7 +64,7 @@
 				<b> <input type = "radio"  name="icedRadio" id="doubleIcedRadio"  onchange="computeIced()"   
 					/>Double $5.75</b>
 				</td>
-				<td align="center"><input type="number" class="amount" id="icedQty" size="3" maxlength="4" min="0" onchange="computeIced()"></td>
+				<td align="center"><input type="number" oninput="this.value = Math.abs(this.value)" class="amount" id="icedQty" size="3" maxlength="4" min="0" onchange="computeIced()"></td>
 				<td align="center">$<label class="costLabel" id="icedCost">0</label>
 				</td>
 			</tr>

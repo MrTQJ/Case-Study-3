@@ -43,12 +43,10 @@ function editJava() {
   console.log("CLICKED");
   console.log(document.getElementById("javaRadio").checked);
   if (document.getElementById("javaRadio").checked) {
-    document.getElementById(
-      "javaForm"
-    ).innerHTML = `
+    document.getElementById("javaForm").innerHTML = `
     <label>New Price: </label>
-    <input type="number" size="3" maxlength="4" min="0" name="updatedJavaPrice">
-    <input type="submit">`;
+    <input type="number" size="3" maxlength="4" min="0" name="updatedJavaPrice" oninput="this.value = Math.abs(this.value)">
+    `;
   } else {
     document.getElementById("javaForm").innerHTML = "";
   }
@@ -58,15 +56,15 @@ function editCafe() {
   console.log("CLICKED");
   console.log(document.getElementById("cafeRadio").checked);
   if (document.getElementById("cafeRadio").checked) {
-    document.getElementById("cafeForm").innerHTML =
-      `
+    document.getElementById("cafeForm").innerHTML = `
       <div>
-      <label>New Price(Single): </label>
+      <label>New Price(Single): 
       </div>
-      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeSinglePrice">
+      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeSinglePrice" oninput="this.value = Math.abs(this.value)">
+      </label>
       <div>
-      <label>New Price(Double): </label>
-      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeDoublePrice">
+      <label>New Price(Double): 
+      <input type="number" size="3" maxlength="4" min="0" name="updatedCafeDoublePrice" oninput="this.value = Math.abs(this.value)"></label>
       </div>`;
   } else {
     document.getElementById("cafeForm").innerHTML = "";
@@ -77,11 +75,8 @@ function editIced() {
   console.log(document.getElementById("icedRadio").checked);
   if (document.getElementById("icedRadio").checked) {
     document.getElementById("icedForm").innerHTML =
-      '<label>New Price(Single): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedSinglePrice"><label>New Price(Double): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedDoublePrice">';
+      '<label>New Price(Single): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedSinglePrice" ><label>New Price(Double): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedDoublePrice">';
   } else {
     document.getElementById("icedForm").innerHTML = "";
   }
 }
-
-console.log("LOADED");
-

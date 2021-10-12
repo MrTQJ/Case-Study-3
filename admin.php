@@ -40,11 +40,11 @@ for ($i=0; $i <$num_results; $i++) {
   foreach($prices as $product_id => $price) {
 	if ($price){
 		$query = "UPDATE javajam_prices SET price = " .$price." WHERE id = " .$product_id .";";
-		echo $query;
+		// echo $query;
 		$result = $db->query($query);
 
 		if ($result) {
-			echo  $db->affected_rows."<br> book inserted into database.";
+			// echo  $db->affected_rows."<br> Price updated.";
 				header("Refresh:0");
 		} else {
 				echo "<br>An error has occurred.  The item was not added.";
@@ -112,7 +112,11 @@ for ($i=0; $i <$num_results; $i++) {
 				<div id ="icedForm"></div>
 				</td> 
 			</tr>
-
+			<tr>
+				<td>
+					<input type="submit" id="submitBtn">
+				</td>
+			</tr>
 			</table>
 			</form>
 		</div>
