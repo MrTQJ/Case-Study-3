@@ -128,10 +128,10 @@ label {
   float: left;
   clear: left;
   display: block;
-  width: 100px;
+  /* width: 100px; */
   text-align: right;
   padding-right: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .costLabel {

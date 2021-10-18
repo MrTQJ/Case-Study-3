@@ -61,7 +61,7 @@ for ($i=0; $i <$num_results; $i++) {
 			<tr>
 				<th>Cafe au Lait</th>
 				<td>House blended coffee infused into a smooth, steamed milk.<br>
-				<b> <input type = "radio"  name="cafeRadio" id="singleCafeRadio"  onchange="computeCafe()"   
+				<b> <input type = "radio"  name="cafeRadio" id="singleCafeRadio"  onchange="computeCafe() "   
 					/>Single $2.00</b>
 					
 				<b> <input type = "radio"  name="cafeRadio" id="doubleCafeRadio"  onchange="computeCafe()"   
