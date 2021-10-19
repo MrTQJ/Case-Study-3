@@ -16,12 +16,12 @@
 
 		<div id="leftcolumn">
 		<nav>
-			<a href="index.html">Home</a>
+			<!-- <a href="index.html">Home</a> -->
 			<a href="menu.php">Menu</a>
-			<a href="music.html">Music</a>
-			<a href="jobs.html">Jobs</a>
-			<a href="admin.php">Admin</a>
-			<a href="admin2.php">Admin2</a>
+			<!-- <a href="music.html">Music</a>
+			<a href="jobs.html">Jobs</a> -->
+			<a href="admin.php" style="font-size: 0.6em;">Price Update</a>
+			<a href="admin2.php" style="font-size: 0.6em;">Sales Report</a>
 		</nav>
 		</div>
 

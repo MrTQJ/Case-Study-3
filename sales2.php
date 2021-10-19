@@ -40,7 +40,7 @@ for ($i=0; $i <$num_results; $i++) {
 			<a href="menu.php">Menu</a>
 			<a href="music.html">Music</a>
 			<a href="jobs.html">Jobs</a>
-			<a href="admin.php">Admin</a>
+			<a href="admin.php">Resources</a>
 		</nav>
 		</div>
 

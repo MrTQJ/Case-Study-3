@@ -75,7 +75,7 @@ function editIced() {
   console.log(document.getElementById("icedRadio").checked);
   if (document.getElementById("icedRadio").checked) {
     document.getElementById("icedForm").innerHTML =
-      '<label>New Price(Single): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedSinglePrice" ><label>New Price(Double): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedDoublePrice">';
+      '<label style="margin-right: 6px;">New Price(Single): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedSinglePrice" ><label>New Price(Double): </label><input type="number" size="3" maxlength="4" min="0" name="updatedIcedDoublePrice">';
   } else {
     document.getElementById("icedForm").innerHTML = "";
   }
